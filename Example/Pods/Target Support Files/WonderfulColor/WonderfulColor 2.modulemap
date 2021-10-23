@@ -1,6 +1,0 @@
-framework module WonderfulColor {
-  umbrella header "WonderfulColor-umbrella.h"
-
-  export *
-  module * { export * }
-}

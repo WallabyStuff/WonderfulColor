@@ -1,6 +1,0 @@
-framework module Pods_WonderfulColor_Tests {
-  umbrella header "Pods-WonderfulColor_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
