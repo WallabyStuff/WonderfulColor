@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.name             = 'WonderfulColor'
   s.version          = '0.1.0'
   s.summary          = 'Easily get material color'
-  s.description      = ''
+  s.description      = 'Easily get material color'
   s.homepage         = 'https://github.com/Avocado34/WonderfulColor'
   # s.screenshots      = '[IMAGE URL 1]', '[IMAGE URL 2]'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
