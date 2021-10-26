@@ -13,10 +13,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = WonderfulColor.white
-        
         // #895288
-        if let targetColor = UIColor(hex: "#b1c3a7") {
+        if let targetColor = WonderfulColor(hex: "#b1c3a7") {
             print("<RGB>")
             print(targetColor.rgb().red)
             print(targetColor.rgb().green)
