@@ -14,7 +14,29 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = WonderfulColor.white
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // #895288
+        if let targetColor = UIColor(hex: "#b1c3a7") {
+            print("<RGB>")
+            print(targetColor.rgb().red)
+            print(targetColor.rgb().green)
+            print(targetColor.rgb().blue)
+            print("\n")
+            
+            print("<HSL>")
+            print(targetColor.hsl().hue)
+            print(targetColor.hsl().saturation)
+            print(targetColor.hsl().lightness)
+            print("\n")
+            
+            print("<HSV>")
+            print(targetColor.hsv().hue)
+            print(targetColor.hsv().saturation)
+            print(targetColor.hsv().value)
+            print("\n")
+            
+            print("<HEX>")
+            print(targetColor.hexString())
+        }
     }
 }
-
