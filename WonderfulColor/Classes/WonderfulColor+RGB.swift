@@ -5,9 +5,13 @@
 //  Created by 이승기 on 2021/10/25.
 //
 
+#if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
+#elseif os(OSX)
+import AppKit
+#endif
 
-extension UIColor {
+extension WonderfulColor {
     public func rgb() -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
         var fRed: CGFloat = 0
         var fGreen: CGFloat = 0

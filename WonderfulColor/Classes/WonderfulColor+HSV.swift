@@ -5,9 +5,13 @@
 //  Created by 이승기 on 2021/10/25.
 //
 
+#if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
+#elseif os(OSX)
+import AppKit
+#endif
 
-extension UIColor {
+extension WonderfulColor {
     public convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat) {
         self.init(hue: hue, saturation: saturation, brightness: value, alpha: alpha)
     }
