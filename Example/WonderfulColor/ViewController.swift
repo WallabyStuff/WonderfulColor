@@ -13,28 +13,29 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // #895288
-        if let targetColor = WonderfulColor(hex: "#b1c3a7") {
-            print("<RGB>")
-            print(targetColor.rgb().red)
-            print(targetColor.rgb().green)
-            print(targetColor.rgb().blue)
-            print("\n")
-            
-            print("<HSL>")
-            print(targetColor.hsl().hue)
-            print(targetColor.hsl().saturation)
-            print(targetColor.hsl().lightness)
-            print("\n")
-            
-            print("<HSV>")
-            print(targetColor.hsv().hue)
-            print(targetColor.hsv().saturation)
-            print(targetColor.hsv().value)
-            print("\n")
-            
-            print("<HEX>")
-            print(targetColor.hexString())
-        }
+        
+        let targetColor = WonderfulColor(hue: 270, saturation: 43, lightness: 46)
+        view.backgroundColor = targetColor
+        print(targetColor.hexString())
+        print("\n-RGB-")
+        print(targetColor.rgb().red)
+        print(targetColor.rgb().green)
+        print(targetColor.rgb().blue)
+        print(targetColor.rgb().alpha)
+        print("\n-FRGB-")
+        print(targetColor.frgb().red)
+        print(targetColor.frgb().green)
+        print(targetColor.frgb().blue)
+        print(targetColor.frgb().alpha)
+        print("\n-HSL-")
+        print(targetColor.hsl().hue)
+        print(targetColor.hsl().saturation)
+        print(targetColor.hsl().lightness)
+        print(targetColor.hsl().alpha)
+        print("\n-HSV-")
+        print(targetColor.hsv().hue)
+        print(targetColor.hsv().saturation)
+        print(targetColor.hsv().value)
+        print(targetColor.hsv().alpha)
     }
 }
