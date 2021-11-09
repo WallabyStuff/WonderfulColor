@@ -12,19 +12,19 @@ import AppKit
 #endif
 
 extension WonderfulColor {
+//    public convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat) {
+//        self.init(hue: hue, saturation: saturation, value: value, alpha: 1.0)
+//    }
+//    
+//    public convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat) {
+//        self.init(hue: hue, saturation: saturation, brightness: value, alpha: alpha)
+//    }
+    
     public convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat) {
         self.init(hue: hue, saturation: saturation, value: value, alpha: 1.0)
     }
     
     public convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat) {
-        self.init(hue: hue, saturation: saturation, brightness: value, alpha: alpha)
-    }
-    
-    public convenience init(hue: Int, saturation: Int, value: Int) {
-        self.init(hue: hue, saturation: saturation, value: value, alpha: 1.0)
-    }
-    
-    public convenience init(hue: Int, saturation: Int, value: Int, alpha: CGFloat) {
         let fHue: CGFloat = CGFloat(hue) / 360
         let fSaturation: CGFloat = CGFloat(saturation) / 100
         let fValue: CGFloat = CGFloat(value) / 100
@@ -43,10 +43,6 @@ extension WonderfulColor {
         fHue = fHue * 360
         fSaturation = fSaturation * 100
         fValue = fValue * 100
-        
-        fHue = round(fHue * 100) / 100
-        fSaturation = round(fSaturation * 100) / 100
-        fValue = round(fValue * 100) / 100
         
         return (fHue, fSaturation, fValue, fAlpha)
     }

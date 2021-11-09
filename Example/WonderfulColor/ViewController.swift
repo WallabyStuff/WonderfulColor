@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let targetColor = WonderfulColor(hue: 270, saturation: 43, lightness: 46)
+        guard let targetColor = WonderfulColor(hex: "#346ae7") else { return }
         view.backgroundColor = targetColor
         print(targetColor.hexString())
         print("\n-RGB-")

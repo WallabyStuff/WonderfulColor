@@ -51,13 +51,10 @@ extension WonderfulColor {
         
         getRed(&fRed, green: &fGreen, blue: &fBlue, alpha: &fAlpha)
         
-        fRed = fRed * 255
-        fGreen = fGreen * 255
-        fBlue = fBlue * 255
-        
-        fRed = round(fRed * 100) / 100
-        fGreen = round(fGreen * 100) / 100
-        fBlue = round(fBlue * 100) / 100
+//        fRed = fRed * 255
+//        fGreen = fGreen * 255
+//        fBlue = fBlue * 255
+//
         
         return (fRed, fGreen, fBlue, fAlpha)
     }
