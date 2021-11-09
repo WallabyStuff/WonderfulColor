@@ -12,13 +12,6 @@ import AppKit
 #endif
 
 extension WonderfulColor {
-//    public convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat) {
-//        self.init(hue: hue, saturation: saturation, value: value, alpha: 1.0)
-//    }
-//    
-//    public convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat) {
-//        self.init(hue: hue, saturation: saturation, brightness: value, alpha: alpha)
-//    }
     
     public convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat) {
         self.init(hue: hue, saturation: saturation, value: value, alpha: 1.0)

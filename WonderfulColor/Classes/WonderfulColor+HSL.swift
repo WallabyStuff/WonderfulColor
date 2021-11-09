@@ -12,9 +12,6 @@ import AppKit
 #endif
 
 extension WonderfulColor {
-//    public convenience init(hue: CGFloat, saturation: CGFloat, lightness: CGFloat) {
-//        self.init(hue: hue, saturation: saturation, lightness: lightness, alpha: 1.0)
-//    }
     
     public convenience init(hue: CGFloat, saturation: CGFloat, lightness: CGFloat, alpha: CGFloat = 1.0) {
         let fHue = hue / 360
@@ -31,14 +28,6 @@ extension WonderfulColor {
     public convenience init(hue: CGFloat, saturation: CGFloat, lightness: CGFloat) {
         self.init(hue: hue, saturation: saturation, lightness: lightness, alpha: 1.0)
     }
-//
-//    public convenience init(hue: Int, saturation: Int, lightness: Int, alpha: CGFloat) {
-//        let fHue = CGFloat(hue) / 360
-//        let fSaturation = CGFloat(saturation) / 100
-//        let fLightness = CGFloat(lightness) / 100
-//
-//        self.init(hue: fHue, saturation: fSaturation, lightness: fLightness, alpha: alpha)
-//    }
     
     public func hsl() -> (hue: CGFloat, saturation: CGFloat, lightness: CGFloat, alpha: CGFloat) {
         let frgb = frgb()
