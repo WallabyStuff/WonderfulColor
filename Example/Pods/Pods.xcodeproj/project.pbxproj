@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		199B5B2523574684EAE097FEB84ECE66 /* WonderfulColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1147F06FBED511E5034AD6B6605173C6 /* WonderfulColor-dummy.m */; };
+		43C576B5273FE7CA00A98955 /* Complementary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C576B4273FE7CA00A98955 /* Complementary.swift */; };
 		498285BD272679CA008FB8C3 /* WonderfulColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498285BC272679CA008FB8C3 /* WonderfulColor+RGB.swift */; };
 		498285BF27267A22008FB8C3 /* WonderfulColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498285BE27267A22008FB8C3 /* WonderfulColor+HSL.swift */; };
 		498285C327267A79008FB8C3 /* WonderfulColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498285C227267A79008FB8C3 /* WonderfulColor+HEX.swift */; };
@@ -46,10 +47,11 @@
 		2723D41D648631CB2AB0DCA30DEDD1C1 /* Pods-WonderfulColor_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WonderfulColor_Tests-Info.plist"; sourceTree = "<group>"; };
 		3CF49D4F76DCACE09CBE0DB49A90C3D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		40CE4C919015E03E406A3219C4B6715B /* WonderfulColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WonderfulColor-prefix.pch"; sourceTree = "<group>"; };
-		498285BC272679CA008FB8C3 /* WonderfulColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WonderfulColor+RGB.swift"; path = "WonderfulColor/Classes/WonderfulColor+RGB.swift"; sourceTree = "<group>"; };
-		498285BE27267A22008FB8C3 /* WonderfulColor+HSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WonderfulColor+HSL.swift"; path = "WonderfulColor/Classes/WonderfulColor+HSL.swift"; sourceTree = "<group>"; };
-		498285C227267A79008FB8C3 /* WonderfulColor+HEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WonderfulColor+HEX.swift"; path = "WonderfulColor/Classes/WonderfulColor+HEX.swift"; sourceTree = "<group>"; };
-		498285C42726AD2E008FB8C3 /* WonderfulColor+HSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WonderfulColor+HSV.swift"; path = "WonderfulColor/Classes/WonderfulColor+HSV.swift"; sourceTree = "<group>"; };
+		43C576B4273FE7CA00A98955 /* Complementary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Complementary.swift; path = WonderfulColor/Classes/Complementary.swift; sourceTree = "<group>"; };
+		498285BC272679CA008FB8C3 /* WonderfulColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WonderfulColor+RGB.swift"; sourceTree = "<group>"; };
+		498285BE27267A22008FB8C3 /* WonderfulColor+HSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WonderfulColor+HSL.swift"; sourceTree = "<group>"; };
+		498285C227267A79008FB8C3 /* WonderfulColor+HEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WonderfulColor+HEX.swift"; sourceTree = "<group>"; };
+		498285C42726AD2E008FB8C3 /* WonderfulColor+HSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WonderfulColor+HSV.swift"; sourceTree = "<group>"; };
 		4BD60B5559324251A6F62B4F5CDD74D9 /* Pods-WonderfulColor_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WonderfulColor_Example-dummy.m"; sourceTree = "<group>"; };
 		50024B1D88AF47B94156560C2DE16CBC /* WonderfulColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WonderfulColor.release.xcconfig; sourceTree = "<group>"; };
 		53FA3ABD17C52D7B0394050EC0C42BDA /* Pods-WonderfulColor_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WonderfulColor_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -164,6 +166,18 @@
 			path = "Example/Pods/Target Support Files/WonderfulColor";
 			sourceTree = "<group>";
 		};
+		43C576B3273FE77800A98955 /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				498285BC272679CA008FB8C3 /* WonderfulColor+RGB.swift */,
+				498285C227267A79008FB8C3 /* WonderfulColor+HEX.swift */,
+				498285BE27267A22008FB8C3 /* WonderfulColor+HSL.swift */,
+				498285C42726AD2E008FB8C3 /* WonderfulColor+HSV.swift */,
+			);
+			name = Initializer;
+			path = WonderfulColor/Classes/Initializer;
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,11 +237,9 @@
 		EEDAF5DDBECAE12D3058AA8BFC6901B3 /* WonderfulColor */ = {
 			isa = PBXGroup;
 			children = (
+				43C576B3273FE77800A98955 /* Initializer */,
 				E6625ED4EDE0CA7A329A618BBF9A1E49 /* WonderfulColor.swift */,
-				498285BC272679CA008FB8C3 /* WonderfulColor+RGB.swift */,
-				498285C227267A79008FB8C3 /* WonderfulColor+HEX.swift */,
-				498285BE27267A22008FB8C3 /* WonderfulColor+HSL.swift */,
-				498285C42726AD2E008FB8C3 /* WonderfulColor+HSV.swift */,
+				43C576B4273FE7CA00A98955 /* Complementary.swift */,
 				8A42AA8BC73559694D49E3D503A3213F /* Pod */,
 				35FFE301042857158449B0FFA0F001EA /* Support Files */,
 			);
@@ -379,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C576B5273FE7CA00A98955 /* Complementary.swift in Sources */,
 				498285BF27267A22008FB8C3 /* WonderfulColor+HSL.swift in Sources */,
 				A3B544E98081BC01D34BBB8BC785999E /* WonderfulColor.swift in Sources */,
 				498285C52726AD2E008FB8C3 /* WonderfulColor+HSV.swift in Sources */,
