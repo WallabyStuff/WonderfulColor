@@ -11,7 +11,7 @@ import UIKit
 import AppKit
 #endif
 
-public struct Complememtary {
+public struct Complementary {
     private let originColor: WonderfulColor
     
     init(origin: WonderfulColor) {

@@ -18,7 +18,7 @@ public typealias WonderfulColor = NSColor
 #endif
 
 public extension WonderfulColor {
-    var complementary: Complememtary {
-        return Complememtary(origin: self)
+    var complementary: Complementary {
+        return Complementary(origin: self)
     }
 }
