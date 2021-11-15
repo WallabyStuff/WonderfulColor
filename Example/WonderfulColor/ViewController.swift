@@ -40,8 +40,7 @@ class ViewController: UIViewController {
         print(targetColor.hsv().value)
         print(targetColor.hsv().alpha)
         print("\n-Complementary-")
-        print(targetColor.complementary.first)
-        print(targetColor.complementary.second.rgb())
-        complementaryView.backgroundColor = targetColor.complementary.second
+        print(targetColor.complementary.hexString())
+        complementaryView.backgroundColor = targetColor.complementary
     }
 }
