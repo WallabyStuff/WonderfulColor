@@ -10,7 +10,9 @@ import UIKit
 import WonderfulColor
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var complementaryView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,5 +39,8 @@ class ViewController: UIViewController {
         print(targetColor.hsv().saturation)
         print(targetColor.hsv().value)
         print(targetColor.hsv().alpha)
+        print("\n-Complementary-")
+        print(targetColor.complementary.hexString())
+        complementaryView.backgroundColor = targetColor.complementary
     }
 }
