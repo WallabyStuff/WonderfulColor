@@ -20,13 +20,9 @@ public struct Complementary {
     
     public var color: WonderfulColor {
         if origin.hexString() != "#FFFFFF" && origin.hexString() != "#000000" {
-            var hue: CGFloat = 0
-            var saturation: CGFloat = 0
-            var brightness: CGFloat = 0
-            var alpha: CGFloat = 0
-            origin.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
-            let compHue = CGFloat((hue * 360 + 180).truncatingRemainder(dividingBy: 360)) / 360
-            return WonderfulColor(hue: compHue, saturation: saturation, brightness: brightness, alpha: alpha)
+            let hsl = origin.hsl()
+            let compHue = WonderfulColorUtil.calculate(hue: hsl.hue, angle: 180)
+            return WonderfulColor(hue: compHue, saturation: hsl.saturation, lightness: hsl.lightness, alpha: hsl.alpha)
         } else {
             return origin
         }

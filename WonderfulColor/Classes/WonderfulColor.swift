@@ -14,8 +14,13 @@ public typealias WonderfulColor = NSColor
 #endif
 
 public extension WonderfulColor {
+    
     var complementary: Complementary {
         return Complementary(origin: self)
+    }
+    
+    var tetradic: Tetradic {
+        return Tetradic(origin: self)
     }
     
     static func ==(lhs: WonderfulColor, rhs: WonderfulColor) -> Bool {
@@ -27,8 +32,5 @@ public extension WonderfulColor {
         } else {
             return false
         }
-    }
-    var tetradicColors: TetradicColor {
-        return TetradicColor(originColor: self)
     }
 }
