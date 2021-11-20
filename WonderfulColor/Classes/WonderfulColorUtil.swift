@@ -7,7 +7,7 @@
 
 import Foundation
 class WonderfulColorUtil {
-    static internal func calculate(hue: CGFloat,angle: CGFloat) -> CGFloat {
+    static internal func calculate(hue: CGFloat, angle: CGFloat) -> CGFloat {
         debugPrint(hue,angle)
         return angle < 0 ? (hue+(360-angle)).truncatingRemainder(dividingBy: 360) : (hue+angle).truncatingRemainder(dividingBy: 360)
     }
