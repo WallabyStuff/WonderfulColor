@@ -17,18 +17,18 @@ public struct TetradicColor {
     }
     public var second: WonderfulColor {
         let hsl = first.hsl()
-        let computedHue = WonderfulColorUtil.calculateHue(hue: hsl.hue, angle: 90)
+        let computedHue = WonderfulColorUtil.calculate(hue: hsl.hue, angle: 90)
         return WonderfulColor(hue: computedHue, saturation: hsl.saturation, lightness: hsl.lightness)
         
     }
     public var third: WonderfulColor {
         let hsl = first.hsl()
-        let computedHue = WonderfulColorUtil.calculateHue(hue: hsl.hue, angle: 180)
+        let computedHue = WonderfulColorUtil.calculate(hue: hsl.hue, angle: 180)
         return WonderfulColor(hue: computedHue, saturation: hsl.saturation, lightness: hsl.lightness)
     }
     public var fourth: WonderfulColor {
         let hsl = first.hsl()
-        let computedHue = WonderfulColorUtil.calculateHue(hue: hsl.hue, angle: 270)
+        let computedHue = WonderfulColorUtil.calculate(hue: hsl.hue, angle: 270)
         return WonderfulColor(hue: computedHue, saturation: hsl.saturation, lightness: hsl.lightness)
     }
 }
