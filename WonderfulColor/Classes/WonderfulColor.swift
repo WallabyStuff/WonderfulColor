@@ -24,4 +24,7 @@ public extension WonderfulColor {
         
         return WonderfulColor(hue: compHue, saturation: saturation, brightness: brightness, alpha: alpha)
     }
+    var tetradicColors: TetradicColor {
+        return TetradicColor(originColor: self)
+    }
 }

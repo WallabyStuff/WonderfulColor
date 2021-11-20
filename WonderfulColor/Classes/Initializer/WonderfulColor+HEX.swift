@@ -50,9 +50,10 @@ extension WonderfulColor {
         var fAlpha: CGFloat = 0
 
         getRed(&fRed, green: &fGreen, blue: &fBlue, alpha: &fAlpha)
-
-        let rgb: Int = (Int)(fRed*255)<<16 | (Int)(fGreen*255)<<8 | (Int)(fBlue*255)<<0
-
+        
+        let rgb: Int = Int(round(fRed*255))<<16 | Int(round(fGreen*255))<<8 | Int(round(fBlue*255))<<0
+        
+        debugPrint(fRed*255,fBlue*255,fGreen*255)
         return String(format:"#%06x", rgb)
     }
 }
