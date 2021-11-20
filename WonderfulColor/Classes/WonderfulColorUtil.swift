@@ -7,7 +7,7 @@
 
 internal struct WonderfulColorUtil {
     
-    static func calculate(hue: CGFloat, angle: CGFloat) -> CGFloat {
+    static func spin(hue: CGFloat, angle: CGFloat) -> CGFloat {
         return (hue + angle + 360).truncatingRemainder(dividingBy: 360)
     }
 }

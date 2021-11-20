@@ -20,9 +20,7 @@ public struct Complementary {
     
     public var color: WonderfulColor {
         if origin.hexString() != "#FFFFFF" && origin.hexString() != "#000000" {
-            let hsl = origin.hsl()
-            let compHue = WonderfulColorUtil.calculate(hue: hsl.hue, angle: 180)
-            return WonderfulColor(hue: compHue, saturation: hsl.saturation, lightness: hsl.lightness, alpha: hsl.alpha)
+            return origin.spinHue(angle: 180)
         } else {
             return origin
         }
