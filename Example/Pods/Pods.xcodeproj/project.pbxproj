@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		199B5B2523574684EAE097FEB84ECE66 /* WonderfulColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1147F06FBED511E5034AD6B6605173C6 /* WonderfulColor-dummy.m */; };
+		4371442D2748C46C00FB5B75 /* Complementary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371442C2748C46C00FB5B75 /* Complementary.swift */; };
+		43714433274920BD00FB5B75 /* Tetradic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43714432274920BC00FB5B75 /* Tetradic.swift */; };
+		43714435274920CA00FB5B75 /* WonderfulColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43714434274920C900FB5B75 /* WonderfulColorUtil.swift */; };
 		498285BD272679CA008FB8C3 /* WonderfulColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498285BC272679CA008FB8C3 /* WonderfulColor+RGB.swift */; };
 		498285BF27267A22008FB8C3 /* WonderfulColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498285BE27267A22008FB8C3 /* WonderfulColor+HSL.swift */; };
 		498285C327267A79008FB8C3 /* WonderfulColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498285C227267A79008FB8C3 /* WonderfulColor+HEX.swift */; };
@@ -46,6 +49,9 @@
 		2723D41D648631CB2AB0DCA30DEDD1C1 /* Pods-WonderfulColor_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WonderfulColor_Tests-Info.plist"; sourceTree = "<group>"; };
 		3CF49D4F76DCACE09CBE0DB49A90C3D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		40CE4C919015E03E406A3219C4B6715B /* WonderfulColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WonderfulColor-prefix.pch"; sourceTree = "<group>"; };
+		4371442C2748C46C00FB5B75 /* Complementary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Complementary.swift; path = WonderfulColor/Classes/Complementary.swift; sourceTree = "<group>"; };
+		43714432274920BC00FB5B75 /* Tetradic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tetradic.swift; path = WonderfulColor/Classes/Tetradic.swift; sourceTree = "<group>"; };
+		43714434274920C900FB5B75 /* WonderfulColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WonderfulColorUtil.swift; path = WonderfulColor/Classes/WonderfulColorUtil.swift; sourceTree = "<group>"; };
 		498285BC272679CA008FB8C3 /* WonderfulColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WonderfulColor+RGB.swift"; sourceTree = "<group>"; };
 		498285BE27267A22008FB8C3 /* WonderfulColor+HSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WonderfulColor+HSL.swift"; sourceTree = "<group>"; };
 		498285C227267A79008FB8C3 /* WonderfulColor+HEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WonderfulColor+HEX.swift"; sourceTree = "<group>"; };
@@ -237,6 +243,9 @@
 			children = (
 				43C576B3273FE77800A98955 /* Initializer */,
 				E6625ED4EDE0CA7A329A618BBF9A1E49 /* WonderfulColor.swift */,
+				4371442C2748C46C00FB5B75 /* Complementary.swift */,
+				43714432274920BC00FB5B75 /* Tetradic.swift */,
+				43714434274920C900FB5B75 /* WonderfulColorUtil.swift */,
 				8A42AA8BC73559694D49E3D503A3213F /* Pod */,
 				35FFE301042857158449B0FFA0F001EA /* Support Files */,
 			);
@@ -388,10 +397,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4371442D2748C46C00FB5B75 /* Complementary.swift in Sources */,
 				498285BF27267A22008FB8C3 /* WonderfulColor+HSL.swift in Sources */,
 				A3B544E98081BC01D34BBB8BC785999E /* WonderfulColor.swift in Sources */,
 				498285C52726AD2E008FB8C3 /* WonderfulColor+HSV.swift in Sources */,
+				43714435274920CA00FB5B75 /* WonderfulColorUtil.swift in Sources */,
 				199B5B2523574684EAE097FEB84ECE66 /* WonderfulColor-dummy.m in Sources */,
+				43714433274920BD00FB5B75 /* Tetradic.swift in Sources */,
 				498285BD272679CA008FB8C3 /* WonderfulColor+RGB.swift in Sources */,
 				498285C327267A79008FB8C3 /* WonderfulColor+HEX.swift in Sources */,
 			);

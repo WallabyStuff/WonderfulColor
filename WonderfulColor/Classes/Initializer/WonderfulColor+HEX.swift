@@ -11,8 +11,10 @@ import UIKit
 import AppKit
 #endif
 
-extension WonderfulColor {
-    public convenience init?(hex: String) {
+public extension WonderfulColor {
+    
+    /// WonderfulColor Initialzer with String(hex)
+    convenience init?(hex: String) {
         let fRed: CGFloat
         let fGreen: CGFloat
         let fBlue: CGFloat
@@ -38,22 +40,31 @@ extension WonderfulColor {
         return nil
     }
     
-    public convenience init?(hex: String, alpha: CGFloat) {
+    convenience init?(hex: String, alpha: CGFloat) {
         self.init(hex: hex)
         withAlphaComponent(alpha)
     }
     
-    public func hexString() -> String {
+    /// WonderfulColor Initializer with UInt(hex)
+    /// - Parameters:
+    ///   - hex: UInt hex value
+    ///   - alpha: alpha value
+    convenience init(hex: UInt, alpha: CGFloat = 1.0) {
+        self.init(
+            red: CGFloat((hex & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((hex & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(hex & 0x0000FF) / 255.0,
+            alpha: CGFloat(alpha))
+    }
+    
+    func hexString() -> String {
         var fRed: CGFloat = 0
         var fGreen: CGFloat = 0
         var fBlue: CGFloat = 0
         var fAlpha: CGFloat = 0
 
         getRed(&fRed, green: &fGreen, blue: &fBlue, alpha: &fAlpha)
-        
-        let rgb: Int = Int(round(fRed*255))<<16 | Int(round(fGreen*255))<<8 | Int(round(fBlue*255))<<0
-        
-        debugPrint(fRed*255,fBlue*255,fGreen*255)
-        return String(format:"#%06x", rgb)
+        let rgb: Int = Int(round(fRed * 255)) << 16 | Int(round(fGreen * 255)) << 8 | Int(round(fBlue * 255)) << 0
+        return String(format:"#%06x", rgb).uppercased()
     }
 }

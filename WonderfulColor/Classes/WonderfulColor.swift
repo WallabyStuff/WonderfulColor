@@ -14,17 +14,23 @@ public typealias WonderfulColor = NSColor
 #endif
 
 public extension WonderfulColor {
-    var complementary: WonderfulColor {
-        var hue: CGFloat = 0
-        var saturation: CGFloat = 0
-        var brightness: CGFloat = 0
-        var alpha: CGFloat = 0
-        self.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
-        let compHue = CGFloat((hue + 0.5) - 1.0)
-        
-        return WonderfulColor(hue: compHue, saturation: saturation, brightness: brightness, alpha: alpha)
+    
+    var complementary: Complementary {
+        return Complementary(origin: self)
     }
-    var tetradicColors: TetradicColor {
-        return TetradicColor(originColor: self)
+    
+    var tetradic: Tetradic {
+        return Tetradic(origin: self)
+    }
+    
+    static func ==(lhs: WonderfulColor, rhs: WonderfulColor) -> Bool {
+        if lhs.rgb() == rhs.rgb()
+            && lhs.hsl() == rhs.hsl()
+            && lhs.hsv() == rhs.hsv()
+            && lhs.hexString() == rhs.hexString() {
+            return true
+        } else {
+            return false
+        }
     }
 }

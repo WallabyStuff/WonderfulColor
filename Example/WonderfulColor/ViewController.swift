@@ -16,31 +16,38 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let targetColor = WonderfulColor(hex: "#346ae7") else { return }
-        view.backgroundColor = targetColor
-        print(targetColor.hexString())
-        print("\n-RGB-")
-        print(targetColor.rgb().red)
-        print(targetColor.rgb().green)
-        print(targetColor.rgb().blue)
-        print(targetColor.rgb().alpha)
-        print("\n-FRGB-")
-        print(targetColor.frgb().red)
-        print(targetColor.frgb().green)
-        print(targetColor.frgb().blue)
-        print(targetColor.frgb().alpha)
-        print("\n-HSL-")
-        print(targetColor.hsl().hue)
-        print(targetColor.hsl().saturation)
-        print(targetColor.hsl().lightness)
-        print(targetColor.hsl().alpha)
-        print("\n-HSV-")
-        print(targetColor.hsv().hue)
-        print(targetColor.hsv().saturation)
-        print(targetColor.hsv().value)
-        print(targetColor.hsv().alpha)
-        print("\n-Complementary-")
-        print(targetColor.complementary.hexString())
-        complementaryView.backgroundColor = targetColor.complementary
+//        guard let targetColor = WonderfulColor(hex: "#346ae7") else { return }
+//        view.backgroundColor = targetColor
+//        print(targetColor.hexString())
+//        
+//        print("\n-RGB-")
+//        print(targetColor.rgb().red)
+//        print(targetColor.rgb().green)
+//        print(targetColor.rgb().blue)
+//        print(targetColor.rgb().alpha)
+//        
+//        print("\n-FRGB-")
+//        print(targetColor.frgb().red)
+//        print(targetColor.frgb().green)
+//        print(targetColor.frgb().blue)
+//        print(targetColor.frgb().alpha)
+//        
+//        print("\n-HSL-")
+//        print(targetColor.hsl().hue)
+//        print(targetColor.hsl().saturation)
+//        print(targetColor.hsl().lightness)
+//        print(targetColor.hsl().alpha)
+//        
+//        print("\n-HSV-")
+//        print(targetColor.hsv().hue)
+//        print(targetColor.hsv().saturation)
+//        print(targetColor.hsv().value)
+//        print(targetColor.hsv().alpha)
+//        
+//        print("\n-Complementary-")
+//        print(targetColor.complementary.hexString())
+//        print(targetColor.complementary.rgb())
+//        complementaryView.backgroundColor = targetColor.complementary
+//        print(targetColor == targetColor)
     }
 }

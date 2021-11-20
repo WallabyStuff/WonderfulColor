@@ -11,13 +11,13 @@ import UIKit
 import AppKit
 #endif
 
-extension WonderfulColor {
+public extension WonderfulColor {
     
-    public convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat) {
+    convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat) {
         self.init(hue: hue, saturation: saturation, value: value, alpha: 1.0)
     }
     
-    public convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat) {
+    convenience init(hue: CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat) {
         let fHue: CGFloat = CGFloat(hue) / 360
         let fSaturation: CGFloat = CGFloat(saturation) / 100
         let fValue: CGFloat = CGFloat(value) / 100
@@ -25,7 +25,7 @@ extension WonderfulColor {
         self.init(hue: fHue, saturation: fSaturation, brightness: fValue, alpha: alpha)
     }
     
-    public func hsv() -> (hue: CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat) {
+    func hsv() -> (hue: CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat) {
         var fHue: CGFloat = 0
         var fSaturation: CGFloat = 0
         var fValue: CGFloat = 0
