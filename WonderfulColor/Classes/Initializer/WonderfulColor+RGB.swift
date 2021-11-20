@@ -11,16 +11,16 @@ import UIKit
 import AppKit
 #endif
 
-extension WonderfulColor {
-    public convenience init(red: CGFloat, green: CGFloat, blue: CGFloat) {
+public extension WonderfulColor {
+    convenience init(red: CGFloat, green: CGFloat, blue: CGFloat) {
         self.init(red: red, green: green, blue: blue, alpha: 1.0)
     }
     
-    public convenience init(red: Int, green: Int, blue: Int) {
+    convenience init(red: Int, green: Int, blue: Int) {
         self.init(red: red, green: green, blue: blue, alpha: 1.0)
     }
     
-    public convenience init(red: Int, green: Int, blue: Int, alpha: CGFloat) {
+    convenience init(red: Int, green: Int, blue: Int, alpha: CGFloat) {
         let fRed: CGFloat = CGFloat(red) / 255
         let fGreen: CGFloat = CGFloat(green) / 255
         let fBlue: CGFloat = CGFloat(blue) / 255
@@ -28,7 +28,7 @@ extension WonderfulColor {
         self.init(red: fRed, green: fGreen, blue: fBlue, alpha: alpha)
     }
     
-    public func rgb() -> (red: Int, green: Int, blue: Int, alpha: CGFloat) {
+    func rgb() -> (red: Int, green: Int, blue: Int, alpha: CGFloat) {
         var fRed: CGFloat = 0
         var fGreen: CGFloat = 0
         var fBlue: CGFloat = 0
@@ -43,7 +43,7 @@ extension WonderfulColor {
         return (iRed, iGreen, iBlue, fAlpha)
     }
     
-    public func frgb() -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+    func frgb() -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
         var fRed: CGFloat = 0
         var fGreen: CGFloat = 0
         var fBlue: CGFloat = 0
