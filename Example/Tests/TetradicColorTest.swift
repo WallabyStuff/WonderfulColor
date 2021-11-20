@@ -13,9 +13,15 @@ import WonderfulColor
 class TetradicColorTest: XCTestCase {
     func testTetraidColor() {
         guard let color = WonderfulColor(hex: "#ff0000") else { XCTAssert(false, "color init error");return; }
+        guard let targetColor = WonderfulColor(hex: "#346ae7") else {
+            XCTAssert(false, "color init error");return;
+        }
         XCTAssertEqual(color.tetradicColors.first.hexString(), "#ff0000")
         XCTAssertEqual(color.tetradicColors.second.hexString(), "#80ff00")
         XCTAssertEqual(color.tetradicColors.third.hexString(), "#00ffff")
         XCTAssertEqual(color.tetradicColors.fourth.hexString(), "#8000ff")
+        
+        XCTAssertEqual(targetColor.complementary.hexString(), "#e7b134")
+        
     }
 }
