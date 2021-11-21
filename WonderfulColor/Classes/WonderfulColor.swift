@@ -34,7 +34,7 @@ public extension WonderfulColor {
         }
     }
     
-    func spinHue(angle: CGFloat) -> WonderfulColor {
+    internal func spinHue(angle: CGFloat) -> WonderfulColor {
         let hsl = self.hsl()
         let computedHue = WonderfulColorUtil.spin(hue: hsl.hue, angle: angle)
         return WonderfulColor(hue: computedHue, saturation: hsl.saturation, lightness: hsl.lightness)
