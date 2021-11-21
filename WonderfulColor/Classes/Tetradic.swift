@@ -19,21 +19,14 @@ public struct Tetradic {
     }
     
     public var second: WonderfulColor {
-        let hsl = origin.hsl()
-        let computedHue = WonderfulColorUtil.calculate(hue: hsl.hue, angle: 90)
-        return WonderfulColor(hue: computedHue, saturation: hsl.saturation, lightness: hsl.lightness)
-        
+        return origin.spinHue(angle: 90)
     }
     
     public var third: WonderfulColor {
-        let hsl = origin.hsl()
-        let computedHue = WonderfulColorUtil.calculate(hue: hsl.hue, angle: 180)
-        return WonderfulColor(hue: computedHue, saturation: hsl.saturation, lightness: hsl.lightness)
+        return origin.spinHue(angle: 180)
     }
     
     public var fourth: WonderfulColor {
-        let hsl = origin.hsl()
-        let computedHue = WonderfulColorUtil.calculate(hue: hsl.hue, angle: 270)
-        return WonderfulColor(hue: computedHue, saturation: hsl.saturation, lightness: hsl.lightness)
+        return origin.spinHue(angle: 270)
     }
 }
